@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pajk.healthmanageapp.base" >
+    package="com.soar.vm.base" >
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application>
 
-        <receiver android:name=".broadcast.NetworkStatusReceiver">
+        <receiver android:name="com.soar.vm.base.broadcast.NetworkStatusReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
             </intent-filter>
