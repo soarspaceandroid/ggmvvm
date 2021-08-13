@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:listDivider">@drawable/black_line</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

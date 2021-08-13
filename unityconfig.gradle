@@ -1,0 +1,30 @@
+/**
+ * 所有Module统一配置  为了防止后期某个module独立出去,dependencies 就不再此处写了
+ */
+android {
+    // 编译SDK的版本
+    compileSdkVersion 29
+    // build tools的版本
+    buildToolsVersion "29.0.3"
+
+    //设置一些默认属性,其可用属性是buildType和ProductFlavors之和
+    defaultConfig {
+        // 应用的包名
+        minSdkVersion 19
+        targetSdkVersion 29
+        multiDexEnabled true //启用多dex打包
+        // 兼容老版本的so
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+
+    // java版本
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+

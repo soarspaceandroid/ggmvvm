@@ -1,0 +1,65 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../unityconfig.gradle'
+
+android {
+
+    defaultConfig {
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions{
+        jvmTarget = "1.8"
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlin_version}"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.2'
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    api 'com.google.android.material:material:1.2.0-alpha06'
+
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4"
+
+    // activity-ktx  fragment-ktx
+    api "androidx.activity:activity-ktx:1.1.0"
+    api "androidx.fragment:fragment-ktx:1.2.5"
+
+    //livedata videomodel
+    def lifecycle_version = "2.2.0"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    //WorkManager  Kotlin + coroutines 暂时不用,协程能满足
+//    api "androidx.work:work-runtime-ktx:2.4.0"
+
+
+    //room
+    def room_version = "2.2.5"
+    api "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    api "androidx.room:room-ktx:$room_version"
+
+    api "com.google.code.gson:gson:2.8.0"
+
+
+}

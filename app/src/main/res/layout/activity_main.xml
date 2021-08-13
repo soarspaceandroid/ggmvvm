@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/testbind"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="将后面的text显示绑定数据"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/testbindView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="原始显示的字符串"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changeTestbind"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="改变上面绑定view的数据值,view跟随变动显示"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/showloading"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="改变loading的值,显示loading"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/hideloading"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="改变loading的值,隐藏loading"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/storeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="插入键值对存储 , user :{name:soar ,age:18}"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/getValue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="获取键值对的值"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/getValueView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="----------"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/testErrorView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="测试Activity的错误显示,点击重试操作中显示toast"
+        android:gravity="center"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/threadTest"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="测试线程执行"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/threadTestView"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="----------"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toOther"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="跳转fragment,测试fragment"
+        android:gravity="center"/>
+
+
+</LinearLayout>

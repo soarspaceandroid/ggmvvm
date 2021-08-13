@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/fragmenttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="fragment inner"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/testErrorView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="测试Fragment的错误显示,点击重试操作中显示toast"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/getValueFromWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="监听数据获取网络数据并显示"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/updateDataAdapter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="adapter方式更新第2个数据的name"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/updateData"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="LiveData方式更新第2个数据的name"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/testEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="测试消息发送,通知前一个页面第一行后面text显示改变掉"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/testEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="测试数据空页面,并将数据插入数据库"
+        android:gravity="center"/>
+
+
+
+    <Button
+        android:id="@+id/testSql"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="从数据库恢复数据"
+        android:gravity="center"/>
+
+
+    <Button
+        android:id="@+id/testDel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="从数据库删除数据"
+        android:gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/musicRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</LinearLayout>
